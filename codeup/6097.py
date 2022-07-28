@@ -4,9 +4,9 @@ w = int(w)
 n = int(input())
 
 arr = []
-for i in range(w) :
+for i in range(h) :
 	arr.append([])
-	for j in range(h) :
+	for j in range(w) :
 		arr[i].append(0)
 
 for i in range(n) :
@@ -22,7 +22,7 @@ for i in range(n) :
 		for j in range(l) :
 			arr[x - 1 + j][y - 1] = 1
 
-for i in range(w) :
-	for j in range(h) :
+for i in range(h) :
+	for j in range(w) :
 		print(arr[i][j], end = ' ')
 	print()
