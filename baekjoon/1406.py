@@ -11,16 +11,14 @@ for i in range(700000) :
 	prev.append(-1)
 cur = 0
 unused = 1
-addr = 0
 
 tmp = input().strip()
 for i in range(1, len(tmp) + 1) :
 	a[unused] = tmp[i - 1]
-	next[addr] = i
-	prev[unused] = addr
-	addr = unused
+	next[cur] = i
+	prev[unused] = cur
+	cur = unused
 	unused += 1
-	cur += 1
 
 n = int(input())
 for i in range(n) :
