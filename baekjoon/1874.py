@@ -3,22 +3,22 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
-s = []
+a = []
 for i in range(n) :
-	s.append(int(input()))
+	a.append(int(input()))
 
 index = 0
-a = []
+s = []
 result = []
 for i in range(1, n + 1) :
-	a.append(i)
+	s.append(i)
 	result.append('+')
-	while a and a[-1] == s[index] :
-		a.pop()
+	while s and s[-1] == a[index] :
+		s.pop()
 		result.append('-')
 		index += 1
 
-if a :
+if s :
 	print('NO')
 else :
 	for e in result :
