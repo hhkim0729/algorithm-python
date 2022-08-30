@@ -10,10 +10,9 @@ for num in a :
 		while d[0] != num :
 			d.rotate(-1)
 			count += 1
-		d.popleft()
 	else :
 		while d[0] != num :
 			d.rotate(1)
 			count += 1
-		d.popleft()
+	d.popleft()
 print(count)
