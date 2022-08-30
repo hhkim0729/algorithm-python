@@ -15,5 +15,5 @@ for num in a :
 		while d[0] != num :
 			d.rotate(1)
 			count += 1
-		d.pop()
+		d.popleft()
 print(count)
