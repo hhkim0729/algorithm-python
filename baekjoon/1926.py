@@ -25,7 +25,6 @@ def bfs(x, y) :
 			ny = y + dy[i]
 			if nx < 0 or nx >= n or ny < 0 or ny >= m :
 				continue
-			# print(nx, ny)
 			if board[nx][ny] == 1 and not visited[nx][ny] :
 				visited[nx][ny] = True
 				q.append((nx, ny))
