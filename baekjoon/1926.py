@@ -16,8 +16,8 @@ visited = [[False] * m for _ in range(n)]
 def bfs(x, y) :
 	area = 1
 	q = deque()
-	q.append((x, y))
 	visited[x][y] = True
+	q.append((x, y))
 	while q :
 		x, y = q.popleft()
 		for i in range(4) :
